@@ -1,327 +1,549 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Umar Alhajimai </title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="profileimage.jpg" type="image/x-icon">
-</head>
-<body>
-  <input class="theme-toggle" type="checkbox" id="theme-toggle" aria-label="Toggle warm theme">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio website of Umar Alhajimai, software developer and AI enthusiast."
+    />
+    <title>Umar Alhajimai</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="profileimage.jpg" type="image/x-icon" />
+  </head>
+  <body>
+    <input class="theme-toggle" type="checkbox" id="theme-toggle" aria-label="Toggle warm theme" />
 
-  <div class="site-shell">
-    <header class="topbar">
-      <a class="brand" href="#home" aria-label="Go to home">
-        <span class="brand-mark">UA</span>
-        <span>Umar Alhajimai</span>
-      </a>
+    <div class="site-shell">
+      <header class="topbar">
+        <a class="brand" href="#home" aria-label="Go to home">
+          <span class="brand-mark">UA</span>
+          <span>Umar Alhajimai</span>
+        </a>
 
-      <nav class="nav" aria-label="Primary navigation">
-        <a href="#work">Work</a>
-        <a href="#skills">Skills</a>
-        <a href="#features">Features</a>
-        <a href="#contact">Contact</a>
-      </nav>
+        <div class="nav-wrap">
+          <nav class="nav" id="primary-nav" aria-label="Primary navigation">
+            <a href="#work">Work</a>
+            <a href="#skills">Skills</a>
+            <a href="#features">Features</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </div>
 
-      <label class="theme-button" for="theme-toggle" title="Change theme">
-        <span></span>
-      </label>
-    </header>
+        <div class="header-actions">
+          <button
+            class="nav-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="primary-nav"
+            aria-label="Toggle navigation"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
 
-    <main>
-      <section class="hero" id="home">
-        <div class="hero-copy">
-          <p class="eyebrow">Available for freelance, internships, and full-time roles</p>
-          <h1>Creative developer building clean, useful, memorable web experiences.</h1>
-          <p class="intro">
-            I design and code responsive websites/webApps, product interfaces, and Simple Models for Ai/ML, and personal brands
-            with sharp visuals, smooth interactions, and practical user flows.
+          <label class="theme-button" for="theme-toggle" title="Change theme" aria-label="Toggle dark mode">
+            <span></span>
+          </label>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero reveal" id="home">
+          <div class="hero-copy reveal-item">
+            <p class="eyebrow">Available for freelance, internships, and full-time roles</p>
+            <h1>Creative developer building clean, useful, memorable web experiences.</h1>
+            <p class="intro">
+              I design and code responsive websites, web apps, product interfaces,
+              and AI/ML prototypes with sharp visuals, smooth interactions, and
+              practical user flows.
+            </p>
+
+            <div class="hero-actions" aria-label="Main actions">
+              <a class="button primary" href="#work">View Projects</a>
+              <a class="button secondary" href="#contact">Hire Me</a>
+            </div>
+
+            <div class="stats" aria-label="Portfolio statistics">
+              <div>
+                <strong>07+</strong>
+                <span>Projects</span>
+              </div>
+              <div>
+                <strong>0-2 yrs</strong>
+                <span>Experience</span>
+              </div>
+              <div>
+                <strong>100%</strong>
+                <span>Responsive</span>
+              </div>
+            </div>
+          </div>
+
+          <aside class="profile-panel reveal-item" aria-label="Profile summary">
+            <div class="portrait">
+              <span>
+                <img src="profileimage.jpg" alt="My profile" class="profile-pic" />
+              </span>
+            </div>
+            <div class="profile-card">
+              <span class="status-dot"></span>
+              <p>
+                Currently learning AI/ML and building modern project features with HTML,
+                CSS, accessibility, and strong visual detail.
+              </p>
+            </div>
+            <div class="mini-stack">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>UI</span>
+              <span>Brand</span>
+            </div>
+          </aside>
+        </section>
+
+        <section class="section about reveal" aria-labelledby="about-title">
+          <div class="reveal-item">
+            <p class="section-kicker">About</p>
+            <h2 id="about-title">Building software, automation, and digital solutions that solve real problems.</h2>
+          </div>
+          <p class="reveal-item">
+            Hi, I’m Umar Alhajimai, a computer science student, software developer, and founder of
+            <a href="https://syntrovixtechnologies.netlify.app/" target="_blank" rel="noopener noreferrer"><strong>Syntrovix Technologies</strong></a>.
+            I have a passion for creating software solutions that make a difference in people’s lives.
+            With a strong background in computer science and a keen eye for design, I strive to build applications
+            that are not only functional but also user-friendly and visually appealing.
+            <strong>I enjoy</strong> building software systems, websites, web apps, and automation solutions
+            that help people and businesses work more efficiently. I combine programming skills with modern AI tools
+            to create practical digital products and solve real-world problems.
+            <strong>My goal</strong> is to build
+            <a href="https://syntrovixtechnologies.netlify.app/" target="_blank" rel="noopener noreferrer"><strong>Syntrovix Technologies</strong></a>
+            into a software company that creates meaningful impact through technology while continuously learning and improving as a developer.
           </p>
+        </section>
 
-          <div class="hero-actions" aria-label="Main actions">
-            <a class="button primary" href="#work">View Projects</a>
-            <a class="button secondary" href="#contact">Hire Me</a>
+        <section class="section reveal" id="work" aria-labelledby="work-title">
+          <div class="section-heading reveal-item">
+            <p class="section-kicker">Selected Work</p>
+            <h2 id="work-title">Selected projects and systems, from completed builds to the next idea.</h2>
           </div>
 
-          <div class="stats" aria-label="Portfolio statistics">
-            <div>
-              <strong>07+</strong>
-              <span>Projects</span>
-            </div>
-            <div>
-              <strong>0-2 yrs</strong>
-              <span>Experience</span>
-            </div>
-            <div>
-              <strong>100%</strong>
-              <span>Responsive</span>
-            </div>
-          </div>
-        </div>
-
-        <aside class="profile-panel" aria-label="Profile summary">
-          <div class="portrait">
-            <span>
-            <img src="profileimage.jpg" alt="My profile" class="profile-pic"></img>
-            </span>
-          </div>
-          <div class="profile-card">
-            <span class="status-dot"></span>
-            <p>Currently Learning AI/ML for  modern project features  with HTML, CSS, accessibility, and strong visual detail.</p>
-          </div>
-          <div class="mini-stack">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>UI</span>
-            <span>Brand</span>
-          </div>
-        </aside>
-      </section>
-
-      <section class="section about" aria-labelledby="about-title">
-        <div>
-          <p class="section-kicker">About</p>
-          <h2 id="about-title">Building Software,Automation & Digital Solution That Solve Real Problems.</h2>
-        </div>
-        <p>
-          Hi I'm Umar Alhajimai, a computer science student, software developer and founder of <b> <a href="https://syntrovixtechnologies.netlify.app/">Syntrovix Technologies</b> </a>. I have a passion for creating software solutions that make a difference in people's lives. With a strong background in computer science and a keen eye for design, I strive to build applications that are not only functional but also user-friendly and visually appealing.
-          <b>I enjoy</b> building software systems websites, webApps, and automation solutions that help people and businesses work more efficiently. i combine programing skills with modern AI tools to create practical digital products and solve real-world problems.
-          <b>My goals</b> is to build <b> <a href="https://syntrovixtechnologies.netlify.app/">Syntrovix Technologies</b> </a>into a software company that creates meaningful impact through technology while continuously leaening and improving as a developer.
-        </p>
-      </section>
-
-      <section class="section" id="work" aria-labelledby="work-title">
-        <div class="section-heading">
-          <p class="section-kicker">Selected Work</p>
-          <h2 id="work-title">Selected projects and systems, from completed builds to the next idea.</h2>
-        </div>
-
-        <div class="project-grid">
-          <article class="project-card completed-project">
-            <div class="project-visual agriscan-preview">
-              <img class="project-logo" src="logo/crop disease detactor.jpg" alt="Crop Disease Detector logo">
-            </div>
-            <div class="project-body">
-              <div class="project-topline">
-                <div>
-                  <p class="tag">AI / Computer Vision</p>
-                  <h3>Crop Disease Detector</h3>
-                </div>
-                <span class="project-status status-completed">Completed</span>
-              </div>
-              <p>An image classification system for detecting cassava and maize leaf diseases from uploaded images. It classifies crop health conditions and returns a prediction with a confidence score.</p>
-              <div class="project-footer">
-                <div class="tech-tags" aria-label="Crop Disease Detector technologies">
-                  <span>Python</span><span>TensorFlow</span><span>MobileNetV2</span><span>Computer Vision</span><span>Flask</span>
-                </div>
-                <a class="project-cta live-cta" href="https://threemtt-cap-stone-project.onrender.com/" target="_blank" rel="noopener noreferrer">View Project</a>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card">
-            <div class="project-visual carelink-preview">
-              <img class="project-logo" src="logo/carelink.jpg" alt="CareLinkAI logo">
-            </div>
-            <div class="project-body">
-              <div class="project-topline">
-                <div>
-                  <p class="tag">AI / Healthcare / RAG</p>
-                  <h3>CareLinkAI</h3>
-                </div>
-                <span class="project-status status-evolving">In Development</span>
-              </div>
-              <p>An AI-powered health guidance assistant designed for the Nigerian context. It provides structured symptom guidance, emergency red-flag detection, multilingual support, health information, and access to relevant health resources.</p>
-              <div class="project-note">
-                <strong>Development focus</strong>
-                <span>Original MVP exists; the RAG version is being built with a curated medical knowledge base and data-ingestion pipeline for source-grounded responses.</span>
-              </div>
-              <div class="project-footer">
-                <div class="tech-tags" aria-label="CareLinkAI technologies">
-                  <span>Python</span><span>LLM</span><span>RAG</span><span>LlamaIndex</span><span>Qdrant</span><span>Gemini</span><span>AI</span>
-                </div>
-                <span class="project-cta disabled-cta">In Development</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card upcoming-project">
-            <div class="project-visual lexng-preview">
-              <img class="project-logo" src="logo/lexng logo.jpeg" alt="LexNG logo">
-            </div>
-            <div class="project-body">
-              <div class="project-topline">
-                <div>
-                  <p class="tag">AI / Legal Technology / RAG</p>
-                  <h3>LexNG</h3>
-                </div>
-                <span class="project-status status-upcoming">Upcoming</span>
-              </div>
-              <p>A planned AI legal knowledge assistant helping Nigerians understand constitutional provisions, laws, rights, and legal documents through natural-language questions and source-grounded answers.</p>
-              <div class="project-note">
-                <strong>Planned capabilities</strong>
-                <span>Semantic search, document retrieval, source-based responses, and conversational access to Nigerian legal and constitutional information.</span>
-              </div>
-              <div class="project-footer">
-                <div class="tech-tags" aria-label="LexNG technologies">
-                  <span>RAG</span><span>LlamaIndex</span><span>Qdrant</span><span>LLM</span><span>Python</span><span>Legal AI</span>
-                </div>
-                <span class="project-cta disabled-cta">Upcoming</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card completed-project">
-            <div class="project-visual techeasehub-preview">
-              <img class="project-logo" src="logo/Syntrovix Futuristic Blue Logo.png" alt="syntrovix logo">
-            </div>
-            <div class="project-body">
-              <div class="project-topline">
-                <div>
-                  <p class="tag">IT Company / Software / Websites</p>
-                  <h3>TechEaseHub</h3>
-                </div>
-                <span class="project-status status-completed">Completed</span>
-              </div>
-              <p>TechEaseHub builds software systems, websites, and practical digital setups that help small businesses operate more efficiently and present themselves professionally online.</p>
-              <div class="project-footer">
-                <div class="tech-tags" aria-label="Syntrovix Technologies services">
-                  <span>Software Systems</span><span>Websites</span><span>Business Setup</span>
-                </div>
-                <a class="project-cta live-cta" href="https://syntrovixtechnologies.netlify.app/" target="_blank" rel="noopener noreferrer">View Project</a>
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <section class="section skills-section" id="skills" aria-labelledby="skills-title">
-        <div class="section-heading">
-          <p class="section-kicker">Skills</p>
-          <h2 id="skills-title">Tools and strengths that  I can  bring to every build.</h2>
-        </div>
-
-        <div class="skills-layout">
-          <div class="skill-list">
-            <span>Machine Learning Models</span>
-            <span>Natural Language Processing</span>
-            <span>Deep Learning</span>
-            <span>Computer Vision</span>
-            <span>Python</span>
-            <span>Large Language Models</span>
-            <span>llama index</span>
-            <span>Qdrant</span>
-            <span>Langchain</span>
-            <span>UI Design</span>
-            <span>Landing Pages</span>
-            <span>GitHub</span>
-            <span>Automations</span>
+          <div class="project-filters reveal-item" role="group" aria-label="Filter projects">
+            <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All work</button>
+            <button class="filter-button" type="button" data-filter="ai" aria-pressed="false">AI / ML</button>
+            <button class="filter-button" type="button" data-filter="web" aria-pressed="false">Web &amp; software</button>
+            <button class="filter-button" type="button" data-filter="progress" aria-pressed="false">In progress</button>
+            <span class="filter-count" aria-live="polite">4 projects</span>
           </div>
 
-          <div class="progress-list" aria-label="Skill levels">
-            <div class="progress-item">
-              <span>Frontend Layout</span>
-              <strong>95%</strong>
-              <div class="progress-bar"><span style="width: 95%"></span></div>
+          <div class="project-grid">
+            <article class="project-card completed-project reveal-item" data-category="ai">
+              <div class="project-visual agriscan-preview">
+                <img class="project-logo" src="logo/crop disease detactor.jpg" alt="Crop Disease Detector logo" />
+              </div>
+              <div class="project-body">
+                <div class="project-topline">
+                  <div>
+                    <p class="tag">AI / Computer Vision</p>
+                    <h3>Crop Disease Detector</h3>
+                  </div>
+                  <span class="project-status status-completed">Completed</span>
+                </div>
+                <p>
+                  An image classification system for detecting cassava and maize leaf diseases from uploaded images.
+                  It classifies crop health conditions and returns a prediction with a confidence score.
+                </p>
+                <div class="project-footer">
+                  <div class="tech-tags" aria-label="Crop Disease Detector technologies">
+                    <span>Python</span><span>TensorFlow</span><span>MobileNetV2</span><span>Computer Vision</span><span>Flask</span>
+                  </div>
+                  <a class="project-cta live-cta" href="https://threemtt-cap-stone-project.onrender.com/" target="_blank" rel="noopener noreferrer">View Project</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card reveal-item" data-category="ai progress">
+              <div class="project-visual carelink-preview">
+                <img class="project-logo" src="logo/carelink.jpg" alt="CareLinkAI logo" />
+              </div>
+              <div class="project-body">
+                <div class="project-topline">
+                  <div>
+                    <p class="tag">AI / Healthcare / RAG</p>
+                    <h3>CareLinkAI</h3>
+                  </div>
+                  <span class="project-status status-evolving">In Development</span>
+                </div>
+                <p>
+                  An AI-powered health guidance assistant designed for the Nigerian context. It provides structured symptom guidance,
+                  emergency red-flag detection, multilingual support, health information, and access to relevant health resources.
+                </p>
+                <div class="project-note">
+                  <strong>Development focus</strong>
+                  <span>Original MVP exists; the RAG version is being built with a curated medical knowledge base and data-ingestion pipeline for source-grounded responses.</span>
+                </div>
+                <div class="project-footer">
+                  <div class="tech-tags" aria-label="CareLinkAI technologies">
+                    <span>Python</span><span>LLM</span><span>RAG</span><span>LlamaIndex</span><span>Qdrant</span><span>Gemini</span><span>AI</span>
+                  </div>
+                  <span class="project-cta disabled-cta">In Development</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card upcoming-project reveal-item" data-category="ai progress">
+              <div class="project-visual lexng-preview">
+                <img class="project-logo" src="logo/lexng logo.jpeg" alt="LexNG logo" />
+              </div>
+              <div class="project-body">
+                <div class="project-topline">
+                  <div>
+                    <p class="tag">AI / Legal Technology / RAG</p>
+                    <h3>LexNG</h3>
+                  </div>
+                  <span class="project-status status-upcoming">Upcoming</span>
+                </div>
+                <p>
+                  A planned AI legal knowledge assistant helping Nigerians understand constitutional provisions, laws,
+                  rights, and legal documents through natural-language questions and source-grounded answers.
+                </p>
+                <div class="project-note">
+                  <strong>Planned capabilities</strong>
+                  <span>Semantic search, document retrieval, source-based responses, and conversational access to Nigerian legal and constitutional information.</span>
+                </div>
+                <div class="project-footer">
+                  <div class="tech-tags" aria-label="LexNG technologies">
+                    <span>RAG</span><span>LlamaIndex</span><span>Qdrant</span><span>LLM</span><span>Python</span><span>Legal AI</span>
+                  </div>
+                  <span class="project-cta disabled-cta">Upcoming</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card completed-project reveal-item" data-category="web">
+              <div class="project-visual techeasehub-preview">
+                <img class="project-logo" src="logo/Syntrovix Futuristic Blue Logo.png" alt="syntrovix logo" />
+              </div>
+              <div class="project-body">
+                <div class="project-topline">
+                  <div>
+                    <p class="tag">IT Company / Software / Websites</p>
+                    <h3>TechEaseHub</h3>
+                  </div>
+                  <span class="project-status status-completed">Completed</span>
+                </div>
+                <p>
+                  TechEaseHub builds software systems, websites, and practical digital setups that help small businesses operate more efficiently and present themselves professionally online.
+                </p>
+                <div class="project-footer">
+                  <div class="tech-tags" aria-label="Syntrovix Technologies services">
+                    <span>Software Systems</span><span>Websites</span><span>Business Setup</span>
+                  </div>
+                  <a class="project-cta live-cta" href="https://syntrovixtechnologies.netlify.app/" target="_blank" rel="noopener noreferrer">View Project</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section skills-section reveal" id="skills" aria-labelledby="skills-title">
+          <div class="section-heading reveal-item">
+            <p class="section-kicker">Skills</p>
+            <h2 id="skills-title">Tools and strengths I can bring to every build.</h2>
+          </div>
+
+          <div class="skills-layout reveal-item">
+            <div class="skill-list">
+              <span>Machine Learning Models</span>
+              <span>Natural Language Processing</span>
+              <span>Deep Learning</span>
+              <span>Computer Vision</span>
+              <span>Python</span>
+              <span>Large Language Models</span>
+              <span>llama index</span>
+              <span>Qdrant</span>
+              <span>Langchain</span>
+              <span>UI Design</span>
+              <span>Landing Pages</span>
+              <span>GitHub</span>
+              <span>Automations</span>
             </div>
-            <div class="progress-item">
-              <span>Visual Design</span>
-              <strong>80%</strong>
-              <div class="progress-bar"><span style="width: 88%"></span></div>
-            </div>
-            <div class="progress-item">
-              <span>Communication</span>
-              <strong>80%</strong>
-              <div class="progress-bar"><span style="width: 92%"></span></div>
+
+            <div class="progress-list" aria-label="Skill levels">
+              <div class="progress-item">
+                <span>Frontend Layout</span>
+                <strong>95%</strong>
+                <div class="progress-bar"><span style="width: 95%"></span></div>
+              </div>
+              <div class="progress-item">
+                <span>Visual Design</span>
+                <strong>80%</strong>
+                <div class="progress-bar"><span style="width: 88%"></span></div>
+              </div>
+              <div class="progress-item">
+                <span>Communication</span>
+                <strong>80%</strong>
+                <div class="progress-bar"><span style="width: 92%"></span></div>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section class="section features" id="features" aria-labelledby="features-title">
-        <div class="section-heading">
-          <p class="section-kicker">Special Features</p>
-          <h2 id="features-title">CSS-only details that make the portfolio feel alive.</h2>
-        </div>
+        <section class="section features reveal" id="features" aria-labelledby="features-title">
+          <div class="section-heading reveal-item">
+            <p class="section-kicker">Special Features</p>
+            <h2 id="features-title">Details that make the portfolio feel alive.</h2>
+          </div>
 
-        <div class="feature-grid">
-          <article>
-            <span class="feature-icon">01</span>
-            <h3>Theme Switch</h3>
-            <p>Use the top-right switch to change the visual mood without JavaScript.</p>
-          </article>
-          <article>
-            <span class="feature-icon">02</span>
-            <h3>Hover Motion</h3>
-            <p>Cards, buttons, and links respond smoothly when someone explores the page.</p>
-          </article>
-          <article>
-            <span class="feature-icon">03</span>
-            <h3>Responsive Layout</h3>
-            <p>The design adapts neatly across phone, tablet, laptop, and desktop screens.</p>
-          </article>
-          <article>
-            <span class="feature-icon">04</span>
-            <h3>Contact Ready</h3>
-            <p>Social links, email, phone, and WhatsApp are grouped for quick access.</p>
-          </article>
-        </div>
-      </section>
+          <div class="feature-grid">
+            <article class="reveal-item">
+              <span class="feature-icon">01</span>
+              <h3>Theme Switch</h3>
+              <p>Use the top-right switch to change the visual mood.</p>
+            </article>
+            <article class="reveal-item">
+              <span class="feature-icon">02</span>
+              <h3>Hover Motion</h3>
+              <p>Cards, buttons, and links respond smoothly when someone explores the page.</p>
+            </article>
+            <article class="reveal-item">
+              <span class="feature-icon">03</span>
+              <h3>Responsive Layout</h3>
+              <p>The design adapts neatly across phone, tablet, laptop, and desktop screens.</p>
+            </article>
+            <article class="reveal-item">
+              <span class="feature-icon">04</span>
+              <h3>Contact Ready</h3>
+              <p>Social links, email, phone, and WhatsApp are grouped for quick access.</p>
+            </article>
+          </div>
+        </section>
 
-      <section class="section timeline" aria-labelledby="timeline-title">
-        <div class="section-heading">
-          <p class="section-kicker">Journey</p>
-          <h2 id="timeline-title">A simple career timeline.</h2>
-        </div>
+        <section class="section timeline reveal" aria-labelledby="timeline-title">
+          <div class="section-heading reveal-item">
+            <p class="section-kicker">Journey</p>
+            <h2 id="timeline-title">A simple career timeline.</h2>
+          </div>
 
-        <div class="timeline-list">
-          <article>
-            <time>2026</time>
-            <h3>Open to new opportunities</h3>
-            <p>Moved from web Dev. To Ai/Ml to gain new world experience.</p>
-          </article>
-          <article>
-            <time>2025</time>
-            <h3>Launch  personal Company.</h3>
-            <p>Created a TechEaseHub for helping small bussiness owners to work smart with automation tools and online present.</p>
-          </article>
-          <article>
-            <time>2024</time>
-            <h3>Started professional web design.</h3>
-            <p>Focused on HTML, CSS, visual systems, and practical web layouts.</p>
-          </article>
-        </div>
-      </section>
+          <div class="timeline-list">
+            <article class="reveal-item">
+              <time>2026</time>
+              <div>
+                <h3>Open to new opportunities</h3>
+                <p>Moved from web development to AI/ML to gain new world experience.</p>
+              </div>
+            </article>
+            <article class="reveal-item">
+              <time>2025</time>
+              <div>
+                <h3>Launch personal company</h3>
+                <p>Created TechEaseHub to help small business owners work smarter with automation tools and online presence.</p>
+              </div>
+            </article>
+            <article class="reveal-item">
+              <time>2024</time>
+              <div>
+                <h3>Started professional web design</h3>
+                <p>Focused on HTML, CSS, visual systems, and practical web layouts.</p>
+              </div>
+            </article>
+          </div>
+        </section>
 
-      <section class="contact-section" id="contact" aria-labelledby="contact-title">
-        <div class="contact-copy">
-          <p class="section-kicker">Contact</p>
-          <h2 id="contact-title">Let us build something sharp together.</h2>
-          <p>
-            I’m available for freelance, internships, and full-time roles. Reach out
-            with a brief message and I’ll get back to you as soon as possible.
-          </p>
-        </div>
+        <section class="contact-section reveal" id="contact" aria-labelledby="contact-title">
+          <div class="contact-copy reveal-item">
+            <p class="section-kicker">Contact</p>
+            <h2 id="contact-title">Let’s build something sharp together.</h2>
+            <p>
+              I’m available for freelance, internships, and full-time roles. Reach out with a brief message and I’ll get back to you as soon as possible.
+            </p>
+          </div>
 
-        <div class="contact-grid">
-          <a href="mailto:yourname@example.com">Email <span>umaralhajimai79@gmail.com</span></a>
-          <a href="tel:+2348140436332">Phone <span>+234 814 043 6332</span></a>
-          <a href=" https://github.com/oumarvip">GitHub <span>@oumarvip</span></a>
-          <a href="https://www.linkedin.com/in/umar-alhajimai-77961735b?utm_source=share_via&utm_content=profile&utm_medium=member_android">LinkedIn <span>in/umaralhajimai</span></a>
-          <a href="https://x.com/AlhajimaiU91589">Twitter / X <span>@oumarvip</span></a>
-          <a href="https://www.facebook.com/profile.php?id=61572056759139">Facebook <span>umaralhajimai</span></a>
-          <a href="https://www.instagram.com/oumar.vip?igsh=MXMyNXRidTQ3NDR0bQ==">Instagram <span>@oumar.vip</span></a>
-          <a href="https://wa.me/qr/MAWZGFZM3ATXH1">WhatsApp <span>Chat now</span></a>
-        
-        </div>
-      </section>
-    </main>
+          <div class="contact-grid reveal-item">
+            <a href="mailto:umaralhajimai79@gmail.com">Email <span>umaralhajimai79@gmail.com</span></a>
+            <a href="tel:+2348140436332">Phone <span>+234 814 043 6332</span></a>
+            <a href="https://github.com/oumarvip" target="_blank" rel="noopener noreferrer">GitHub <span>@oumarvip</span></a>
+            <a href="https://www.linkedin.com/in/umar-alhajimai-77961735b?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer">LinkedIn <span>in/umaralhajimai</span></a>
+            <a href="https://x.com/AlhajimaiU91589" target="_blank" rel="noopener noreferrer">Twitter / X <span>@oumarvip</span></a>
+            <a href="https://www.facebook.com/profile.php?id=61572056759139" target="_blank" rel="noopener noreferrer">Facebook <span>umaralhajimai</span></a>
+            <a href="https://www.instagram.com/oumar.vip?igsh=MXMyNXRidTQ3NDR0bQ==" target="_blank" rel="noopener noreferrer">Instagram <span>@oumar.vip</span></a>
+            <a href="https://wa.me/qr/MAWZGFZM3ATXH1" target="_blank" rel="noopener noreferrer">WhatsApp <span>Chat now</span></a>
+          </div>
 
-    <footer class="footer">
-      <p>© 2025 Umar Alhajimai.</p>
-      <a href="#home">Back to top</a>
-    </footer>
-  </div>
-</body>
+          <form class="contact-form reveal-item" id="contact-form" novalidate>
+            <h3>Send a message</h3>
+            <div class="form-field">
+              <label for="contact-name">Your name</label>
+              <input id="contact-name" name="name" type="text" autocomplete="name" maxlength="80" required />
+              <span class="field-error" id="name-error" aria-live="polite"></span>
+            </div>
+            <div class="form-field">
+              <label for="contact-email">Email address</label>
+              <input id="contact-email" name="email" type="email" autocomplete="email" maxlength="254" required />
+              <span class="field-error" id="email-error" aria-live="polite"></span>
+            </div>
+            <div class="form-field">
+              <label for="contact-message">Message</label>
+              <textarea id="contact-message" name="message" rows="4" maxlength="2000" required></textarea>
+              <span class="field-error" id="message-error" aria-live="polite"></span>
+            </div>
+            <button class="button form-submit" type="submit">Continue to email</button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <p>© 2025 Umar Alhajimai.</p>
+        <a href="#home">Back to top</a>
+      </footer>
+    </div>
+
+    <div class="custom-cursor" aria-hidden="true"></div>
+
+    <script>
+      document.documentElement.classList.add('js-enabled');
+
+      const navToggle = document.querySelector('.nav-toggle');
+      const nav = document.getElementById('primary-nav');
+      const navLinks = nav ? nav.querySelectorAll('a') : [];
+
+      if (navToggle && nav) {
+        navToggle.addEventListener('click', () => {
+          const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+          navToggle.setAttribute('aria-expanded', String(!expanded));
+          nav.classList.toggle('is-open', !expanded);
+        });
+
+        navLinks.forEach((link) => {
+          link.addEventListener('click', () => {
+            navToggle.setAttribute('aria-expanded', 'false');
+            nav.classList.remove('is-open');
+          });
+        });
+      }
+
+      const revealItems = document.querySelectorAll('.reveal-item, .reveal');
+      if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.18 });
+
+        revealItems.forEach((item) => observer.observe(item));
+      } else {
+        revealItems.forEach((item) => item.classList.add('is-visible'));
+      }
+
+      const filterButtons = document.querySelectorAll('.filter-button');
+      const projectCards = document.querySelectorAll('.project-card[data-category]');
+      const filterCount = document.querySelector('.filter-count');
+
+      filterButtons.forEach((button) => {
+        button.addEventListener('click', () => {
+          const filter = button.dataset.filter;
+          let visibleCount = 0;
+
+          filterButtons.forEach((filterButton) => {
+            const isActive = filterButton === button;
+            filterButton.classList.toggle('is-active', isActive);
+            filterButton.setAttribute('aria-pressed', String(isActive));
+          });
+
+          projectCards.forEach((card) => {
+            const isVisible = filter === 'all' || card.dataset.category.split(' ').includes(filter);
+            card.hidden = !isVisible;
+            if (isVisible) visibleCount += 1;
+          });
+
+          if (filterCount) {
+            filterCount.textContent = `${visibleCount} ${visibleCount === 1 ? 'project' : 'projects'}`;
+          }
+        });
+      });
+
+      const contactForm = document.getElementById('contact-form');
+      if (contactForm) {
+        const fields = {
+          name: document.getElementById('contact-name'),
+          email: document.getElementById('contact-email'),
+          message: document.getElementById('contact-message')
+        };
+        const formStatus = document.getElementById('form-status');
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        contactForm.addEventListener('submit', (event) => {
+          event.preventDefault();
+          let isValid = true;
+
+          Object.entries(fields).forEach(([name, field]) => {
+            const error = document.getElementById(`${name}-error`);
+            let message = '';
+            const value = field.value.trim();
+
+            if (!value) {
+              message = 'This field is required.';
+            } else if (name === 'email' && !emailPattern.test(value)) {
+              message = 'Enter a valid email address.';
+            } else if (name === 'message' && value.length < 10) {
+              message = 'Please enter at least 10 characters.';
+            }
+
+            field.setAttribute('aria-invalid', String(Boolean(message)));
+            error.textContent = message;
+            if (message) isValid = false;
+          });
+
+          if (!isValid) {
+            formStatus.textContent = 'Please correct the highlighted fields.';
+            contactForm.querySelector('[aria-invalid="true"]').focus();
+            return;
+          }
+
+          const subject = `Portfolio enquiry from ${fields.name.value.trim()}`;
+          const body = [
+            `Name: ${fields.name.value.trim()}`,
+            `Email: ${fields.email.value.trim()}`,
+            '',
+            fields.message.value.trim()
+          ].join('\n');
+
+          formStatus.textContent = 'Opening your email app with the message details.';
+          window.location.href = `mailto:umaralhajimai79@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        });
+
+        Object.entries(fields).forEach(([name, field]) => {
+          field.addEventListener('input', () => {
+            field.setAttribute('aria-invalid', 'false');
+            document.getElementById(`${name}-error`).textContent = '';
+            if (formStatus.textContent === 'Please correct the highlighted fields.') {
+              formStatus.textContent = '';
+            }
+          });
+        });
+      }
+
+      const customCursor = document.querySelector('.custom-cursor');
+      if (customCursor && window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+        window.addEventListener('pointermove', (event) => {
+          customCursor.style.setProperty('--cursor-x', `${event.clientX}px`);
+          customCursor.style.setProperty('--cursor-y', `${event.clientY}px`);
+          customCursor.classList.add('is-visible');
+        });
+
+        document.querySelectorAll('a, button, input, textarea, label').forEach((target) => {
+          target.addEventListener('pointerenter', () => customCursor.classList.add('is-hovering'));
+          target.addEventListener('pointerleave', () => customCursor.classList.remove('is-hovering'));
+        });
+
+        document.addEventListener('pointerleave', () => customCursor.classList.remove('is-visible'));
+        document.addEventListener('pointerenter', () => customCursor.classList.add('is-visible'));
+      }
+    </script>
+  </body>
 </html>
